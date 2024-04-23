@@ -1,0 +1,11 @@
+services:
+
+  server:
+    image: nginx:latest
+    volumes:
+      - ./server/html:/usr/share/nginx/html:ro
+    ports:
+      - 80:80
+  
+  # TODO
+  # app:

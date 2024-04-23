@@ -1,0 +1,10 @@
+{
+  "name": "react-shadow-dom-app",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "docker-compose up",
+    "build": "",
+    "start": ""
+  }
+}

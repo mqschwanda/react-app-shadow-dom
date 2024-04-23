@@ -17,10 +17,10 @@ function App() {
           Learn React
         </a>
         <div>
-          <span class="material-symbols-outlined">search</span>
-          <span class="material-symbols-outlined">home</span>
-          <span class="material-symbols-outlined">settings</span>
-          <span class="material-symbols-outlined">favorite</span>
+          <span className="material-symbols-outlined">search</span>
+          <span className="material-symbols-outlined">home</span>
+          <span className="material-symbols-outlined">settings</span>
+          <span className="material-symbols-outlined">favorite</span>
         </div>
       </header>
     </div>

@@ -1,15 +1,14 @@
-export const ROOT_DIV_ID = 'react_root';
+export const SHADOW_ROOT_DIV_ID = 'shadow_root';
 
-export default function getRootDiv() {
-  let rootDiv = document.getElementById(ROOT_DIV_ID);
+export default function getRoots() {
+  let shadowRootDiv = document.getElementById(SHADOW_ROOT_DIV_ID);
 
-  if (rootDiv) {
+  if (!shadowRootDiv) {
+    shadowRootDiv = document.createElement('div');
+    shadowRootDiv.id = SHADOW_ROOT_DIV_ID;
+    document.body.appendChild(shadowRootDiv);
+
+    const rootDiv = shadowRootDiv.attachShadow({ mode: 'open' });
     return rootDiv;
   }
-
-  rootDiv = document.createElement('div');
-  rootDiv.id = ROOT_DIV_ID;
-  document.body.appendChild(rootDiv);
-
-  return rootDiv;
 }
